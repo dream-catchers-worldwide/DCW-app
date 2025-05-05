@@ -27,8 +27,8 @@ const dosis = Dosis({
 })
 
 export const metadata = {
-  title: 'Your App Title',
-  description: 'Your app description',
+  title: 'Dream Catcher',
+  description: 'YDream Catcher World Wide',
 }
 
 export default function RootLayout({
