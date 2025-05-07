@@ -8,7 +8,7 @@ export function LocaleProvider({ children }) {
   const [isUK, setIsUk] = useState(false)
 
   const toggleLocale = () => {
-    setIsUK((prev) => !prev)
+    setIsUk((prev) => !prev)
   }
 
   return (
