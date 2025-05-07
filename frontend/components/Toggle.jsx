@@ -1,10 +1,16 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useLocale } from '@/components/LocaleContext'
 
 export default function ToggleSwitch() {
   const { isUK, toggleLocale } = useLocale()
+  const [mounted, setMounted] = useState(false)
 
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) return null
   // const [isUK, setIsUK] = useState(false)
 
   // const toggleSwitch = () => {
