@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar'
 import TopLogos from '@/components/TopLogos'
 import Toggle from '@/components/Toggle'
 import PageWrapper from '@/components/PageWrapper'
+import { LocaleProvider } from '@/components/LocaleContext'
 
 const lora = Lora({
   variable: '--font-lora',
@@ -54,14 +55,16 @@ export default function RootLayout({
           backgroundAttachment: 'fixed',
         }}
       >
-        <TopLogos />
-        <div className="lg:pt-5 pt-2  ">
-          <Toggle />
-          <Navbar />
-        </div>
-        {/* <main>{children}</main> */}
-        <PageWrapper>{children}</PageWrapper>
-        <Footer />
+        <LocaleProvider>
+          <TopLogos />
+          <div className="lg:pt-5 pt-2  ">
+            <Toggle />
+            <Navbar />
+          </div>
+          {/* <main>{children}</main> */}
+          <PageWrapper>{children}</PageWrapper>
+          <Footer />
+        </LocaleProvider>
       </body>
     </html>
   )
