@@ -1,14 +1,22 @@
 'use client'
 
-import React, { createContext, useContext, useState } from 'react'
+import React, { createContext, useContext, useEffect, useState } from 'react'
 
 const LocaleContext = createContext(undefined)
 
 export function LocaleProvider({ children }) {
-  const [isUK, setIsUk] = useState(false)
+  const [isUK, setIsUK] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('isUK') === 'true'
+    }
+    return false
+  })
+  useEffect(() => {
+    localStorage.setItem('isUK', String(isUK))
+  }, [isUK])
 
   const toggleLocale = () => {
-    setIsUk((prev) => !prev)
+    setIsUK((prev) => !prev)
   }
 
   return (
