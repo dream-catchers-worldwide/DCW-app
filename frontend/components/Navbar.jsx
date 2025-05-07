@@ -94,9 +94,9 @@ export default function Navbar() {
       )}
 
       {/* Mobile Hamburger Menu */}
-      <div className="ml-10">
+      <div className="ml-0">
         <div className="block md:hidden sticky top-0 z-50 ml-4 pb-0">
-          <div className="cursor-pointer" onClick={toggleMenu}>
+          <div className="cursor-pointer " onClick={toggleMenu}>
             {isMenuOpen ? (
               // "X" icon
               <svg
@@ -110,7 +110,7 @@ export default function Navbar() {
             ) : (
               // Hamburger icon
               <svg
-                className="block h-6 w-6 fill-current text-black"
+                className="block h-6 w-6 fill-current text-black  ml-1"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -119,7 +119,7 @@ export default function Navbar() {
               </svg>
             )}
 
-            <p className="font-[Convergence] text-black text-sm">
+            <p className="font-[Convergence] text-black text-xs pb-4">
               {isMenuOpen ? 'Close' : 'Menu'}
             </p>
           </div>
