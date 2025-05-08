@@ -52,10 +52,10 @@ const ContactUs = () => {
           />
         </div>
 
-        <div className="col-span-2 text-center mt-4">
+        <div className="col-span-2  mt-4">
           <button
             type="submit"
-            className="px-4 py-2 bg-[#ac7ba5] text-white rounded-md hover:bg-[#778d92]"
+            className="px-4 py-2 bg-[#ac7ba5] text-white rounded-md hover:scale-110 transform transition-all"
           >
             Submit
           </button>

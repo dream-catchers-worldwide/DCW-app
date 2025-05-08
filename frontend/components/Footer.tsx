@@ -113,15 +113,15 @@ const Footer = () => {
                 {section === 'What We Do' && (
                   <>
                     <div className="w-36 space-y-2 text-sm">
-                      <div className=" pb-2">
+                      <div className=" pb-0">
                         <a
                           href="what-we-do#services"
-                          className="font-bold hover:text-base transition-all duration-200 "
+                          className=" hover:text-base transition-all duration-200 "
                         >
                           Services
                         </a>
                       </div>
-                      <li>
+                      {/* <li>
                         <a
                           href="what-we-do#services"
                           className="hover:text-base transition-all duration-200"
@@ -144,56 +144,56 @@ const Footer = () => {
                         >
                           Homework Hubs
                         </a>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <a
                           href="what-we-do#services"
                           className="hover:text-base transition-all duration-200"
                         >
                           Dance Classes
                         </a>
-                      </li>
-                      <div className="pt-4 pb-2">
+                      </li> */}
+                      <div className="pt-0 pb-0">
                         <a
                           href="what-we-do#events"
-                          className="font-bold hover:text-base transition-all duration-200 "
+                          className=" hover:text-base transition-all duration-200 "
                         >
                           Events
                         </a>
                       </div>
-                      <li>
+                      {/* <li>
                         <a
                           href="what-we-do#events"
                           className="hover:text-base transition-all duration-200"
                         >
                           Feed4All
                         </a>
-                      </li>
+                      </li> */}
 
-                      <div className="pt-4 pb-2">
+                      <div className="pt-0 pb-0">
                         <a
                           href="what-we-do#events"
-                          className="font-bold hover:text-base transition-all duration-200 "
+                          className=" hover:text-base transition-all duration-200 "
                         >
                           Affiliations
                         </a>
                       </div>
-                      <li>
+                      {/* <li>
                         <a
                           href="what-we-do#events"
                           className="hover:text-base transition-all duration-200"
                         >
                           Foreign Exchange NZ
                         </a>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <a
                           href="what-we-do#events"
                           className="hover:text-base transition-all duration-200"
                         >
                           House Dance NZ
                         </a>
-                      </li>
+                      </li> */}
                     </div>
                   </>
                 )}
@@ -275,9 +275,9 @@ const Footer = () => {
             <p className="text-sm">+64 21 083 74545</p>
             <p className="text-sm">+44 7516 016 779</p>
             <p className="pt-2 text-sm">
-              272 New Windor Road, New Windsor, Auckland, 0600
+              272 New Windsor Road, New Windsor, Auckland, 0600
             </p>
-            <div className="flex space-x-2 pt-2  ">
+            <div className="flex space-x-2 pt-4  ">
               <a
                 href="https://x.com/i/flow/login?redirect_after_login=%2Fdreamcatchersnz"
                 target="_blank"
@@ -366,14 +366,14 @@ const Footer = () => {
             <p className="font-[sansation] text-xs text-gray-100 pb-4">
               <span className="font-bold pr-2"></span>
               <br />
-              <span className="pt-40 block hidden lg:block">
+              <span className="pt-80 block hidden lg:block">
                 © 2025 by DreamCatchers WorldWide
               </span>
             </p>
           </div>
 
-          {/* Right: Map */}
-          <div className="flex justify-center lg:justify-end pb-4 lg:mt-[-200px]">
+          {/* Right: Map lg:mt-[-250px] */}
+          <div className="flex justify-center lg:justify-end pb-4 lg:mt-[-50px]">
             <div className="w-full max-w-xs">
               <GoogleMapEmbed size="small" />
             </div>
