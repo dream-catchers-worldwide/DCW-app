@@ -18,7 +18,7 @@ export default function MissionStatement() {
 
         'At the heart of our mission is the conviction that everyone—regardless of age, background, or circumstance—deserves the opportunity to learn, to connect, and to thrive. DreamCatchers WorldWide New Zealand builds pathways to social inclusion, digital confidence, academic achievement, and civic participation, ensuring that no one is left behind in our rapidly changing world.',
       ]}
-      image="/childnMother.jpg"
+      image="/images/Mission Statement.png"
     />
   )
 }

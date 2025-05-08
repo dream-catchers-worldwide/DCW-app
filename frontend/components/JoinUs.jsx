@@ -32,7 +32,6 @@ export default function JoinUs() {
               </div>
             </div>
           </div>
-
           <div className="grid grid-cols-2 grid-rows-1 gap-1 mt-4 text-center">
             <div className="font-[Convergence] lg:text-xl text-md ">
               Check for current vacancies!
@@ -46,6 +45,9 @@ export default function JoinUs() {
                 newTab={true}
               />
             )}
+          </div>
+          <div>
+            <img src="images/Volunteer .png" />
           </div>
         </>
       </div>

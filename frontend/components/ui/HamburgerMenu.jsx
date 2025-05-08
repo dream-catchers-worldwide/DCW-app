@@ -186,7 +186,7 @@ export default function HamburgerMenu() {
             </div>
             <ul className="text-black text-sm font-[Convergence] space-y-2">
               <li>
-                <a href="donate#givealittle">Give a little</a>
+                <a href="donate#givealittle">Givealittle</a>
               </li>
               <li>
                 <a href="donate#direct-donation">Direct donations</a>
