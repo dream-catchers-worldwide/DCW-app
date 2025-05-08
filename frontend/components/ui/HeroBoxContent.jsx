@@ -1,18 +1,31 @@
+'use client'
 import DonateButton from './DonateButton'
+import { useLocale } from '../LocaleContext'
 
 export default function HeroContent() {
+  const { isUK } = useLocale()
   return (
     <>
       <div className="relative lg:mx-50 md:mx-30 sm:mx-10 text-black overflow-hidden">
         {/* Background image */}
-        <img
-          src="/images/Main Image DCW website.png"
-          alt="bgImage"
-          className="w-full object-cover sm:h-[200px] md:h-[300px] lg:h-[400px]"
-        />
+        <div>
+          {isUK ? (
+            <img
+              src="/images/uk home.png"
+              alt="bgImage"
+              className="w-full object-cover sm:h-[200px] md:h-[300px] lg:h-[400px]"
+            />
+          ) : (
+            <img
+              src="/images/Main Image DCW website.png"
+              alt="bgImage"
+              className="w-full object-cover sm:h-[200px] md:h-[300px] lg:h-[400px]"
+            />
+          )}
+        </div>
 
         {/* Pink box overlay */}
-        <div className="lg:mx-10 lg:my-15 mx-5 my-5 absolute inset-0 bg-[#705f93b6] opacity-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-1">
+        <div className="lg:mx-10 lg:my-15 mx-5 my-5 absolute inset-0 bg-[#705F938F] opacity-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-1">
           {/* Big Text */}
           <div className="col-span-1 md:col-span-2 lg:col-span-2 row-start-1">
             <p
