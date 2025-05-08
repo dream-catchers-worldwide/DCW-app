@@ -35,14 +35,14 @@ export default function Givealittle() {
             content={[
               'To make an instant and secure online donation using your Visa, MasterCard or AMEX, click on the link below to be redirected to the Givealittle fundraising page: ',
             ]}
-            image="/givealittle.jpeg"
-            imagePosition="right"
+            image="/givealittleLogo.png"
+            // imagePosition="right"
             bgColor="gray"
           />
           <div className="text-black bg-gray-100 md:mx-10 lg:mx-25 xl:mx-50 pt-5">
             <div className="flex justify-center">
               <Button
-                text="Givealittle"
+                text="Donate Now!"
                 link="https://givealittle.co.nz/donate/org/dreamcatchersworldwide"
                 newTab={true}
               />

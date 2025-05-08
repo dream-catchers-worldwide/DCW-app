@@ -31,7 +31,11 @@ export default function NavbarWhatWeDo() {
           <div className="mt-6 sm:mt-8">
             <ul className="space-y-3 sm:space-y-4 text-xs sm:text-sm">
               <li className="hover:scale-105 hover:translate-x-1 transition-transform duration-200">
-                <a href="what-we-do#services" className="text-black">
+                <a
+                  target="_blank"
+                  href="https://www.eventbrite.co.nz/e/saturday-stretch-and-flex-yoga-class-tickets-1349556512859?aff=oddtdtcreator"
+                  className="text-black"
+                >
                   Stretch and Flex (Yoga)
                 </a>
               </li>
@@ -41,7 +45,11 @@ export default function NavbarWhatWeDo() {
                 </a>
               </li>
               <li className="hover:scale-105 hover:translate-x-1 transition-transform duration-200">
-                <a href="what-we-do#services" className="text-black">
+                <a
+                  target="_blank"
+                  href="https://www.eventbrite.co.uk/e/1315650569269?aff=oddtdtcreator"
+                  className="text-black"
+                >
                   Homework Hubs
                 </a>
               </li>
@@ -69,7 +77,11 @@ export default function NavbarWhatWeDo() {
             <div className="mt-6 sm:mt-8">
               <ul className="space-y-3 sm:space-y-4 text-xs sm:text-sm">
                 <li className="hover:scale-105 hover:translate-x-1 transition-transform duration-200">
-                  <a href="what-we-do#events" className="text-black">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/feed4allnz?igsh=MXJpeGQ2M3pkNHA4bw=="
+                    className="text-black"
+                  >
                     Feed4All
                   </a>
                 </li>

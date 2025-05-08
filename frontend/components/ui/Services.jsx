@@ -15,6 +15,9 @@ export default function Services() {
               src={project.image}
               alt={project.caption}
               caption={project.caption}
+              url={project.url}
+              moreUrl={project.moreUrl}
+              moreText={project.moreText}
             />
           ))}
         </div>

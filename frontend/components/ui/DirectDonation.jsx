@@ -31,13 +31,14 @@ export default function DirectDonation() {
             'DreamCatchers WorldWide',
             '(Kiwibank)',
             '38-9017-0215180-00',
-            'Ref: Name + Donation',
+            'Ref:',
+            'Name + Donation',
             'Posted Donations',
             'You are welcome to send donations via mail. If possible, we recommend you send a cheque for security purposes. Our address is:',
             'DreamCatchers WorldWide',
             '272 New Windsor Road, New Windsor, Auckland 0600',
           ]}
-          image="/donate.jpg"
+          // image="/donate.jpg"
         />
       )}
     </div>

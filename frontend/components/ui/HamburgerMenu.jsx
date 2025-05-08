@@ -95,13 +95,24 @@ export default function HamburgerMenu() {
 
             <ul className="text-black text-sm font-[Convergence] space-y-2">
               <li>
-                <a href="what-we-do#projects">Stretch and Flex (Yoga)</a>
+                <a
+                  target="_blank"
+                  href="https://www.eventbrite.co.nz/e/saturday-stretch-and-flex-yoga-class-tickets-1349556512859?aff=oddtdtcreator"
+                >
+                  Stretch and Flex (Yoga)
+                </a>
               </li>
               <li>
                 <a href="what-we-do#projects">Smart Tech for Seniors</a>
               </li>
               <li>
-                <a href="what-we-do#projects">Homework Clubs</a>
+                target="_blank"
+                <a
+                  target="_blank"
+                  href="https://www.eventbrite.co.uk/e/1315650569269?aff=oddtdtcreator"
+                >
+                  Homework Clubs
+                </a>
               </li>
               <li>
                 <a href="what-we-do#projects">Dance Classes</a>
@@ -118,7 +129,12 @@ export default function HamburgerMenu() {
 
             <ul className="text-black text-sm font-[Convergence] space-y-2">
               <li>
-                <a href="what-we-do#events">Feed4All</a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/feed4allnz?igsh=MXJpeGQ2M3pkNHA4bw=="
+                >
+                  Feed4All
+                </a>
               </li>
 
               <div className="py-2">

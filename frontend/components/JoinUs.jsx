@@ -22,20 +22,20 @@ export default function JoinUs() {
                 all backgrounds and experiences, and we offer a range of
                 volunteer opportunities to suit your interests and availability.
                 <br />
-                We partner with Volunteering Auckland to offer rewarding and
-                enriching volunteering opportunities.
+                We partner with Volunteering Auckland since 2016 to offer
+                rewarding and enriching volunteering opportunities.
               </div>
 
               {/* Image: takes 1/3 on larger screens, full width & centered on small */}
               <div className="flex justify-center sm:justify-end">
-                <img src="/volunteerpage.png" className="h-60 w-auto" />
+                <img src="/VolunteeringAuckland.png" className="h-40 w-auto" />
               </div>
             </div>
           </div>
 
           <div className="grid grid-cols-2 grid-rows-1 gap-1 mt-4 text-center">
             <div className="font-[Convergence] lg:text-xl text-md ">
-              Check for Current vacancies!
+              Check for current vacancies!
             </div>
             {isUK ? (
               <Button text="Go!" link="/contact-us" newTab={true} />

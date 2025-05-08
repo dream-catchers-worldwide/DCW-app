@@ -15,6 +15,9 @@ export default function Events() {
               src={event.image}
               alt={event.caption}
               caption={event.caption}
+              url={event.url}
+              moreUrl={event.moreUrl}
+              moreText={event.moreText}
             />
           ))}
         </div>
