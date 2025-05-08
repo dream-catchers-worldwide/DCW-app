@@ -9,7 +9,7 @@ export default function Gifts() {
 
         'You can also leave a meaningful legacy by including DreamCatchers WorldWide in your will or making a one-time or regular donation. Every gift—big or small—makes a difference. ',
       ]}
-      image="/gifts.jpg"
+      image="/images/Gifts.png"
       // imagePosition="right"
       bgColor="gray"
     />
