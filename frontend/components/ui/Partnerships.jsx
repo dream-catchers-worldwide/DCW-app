@@ -1,5 +1,6 @@
 import Content from '../Contents'
 import Button from './Button'
+import PartnershipLogos from './PartnershipLogos'
 export default function Partnerships() {
   return (
     <>
@@ -15,7 +16,10 @@ export default function Partnerships() {
       />
       <div className="text-black bg-white md:mx-10 lg:mx-25 xl:mx-50 pt-5">
         <div className="flex justify-center">
-          <Button text="GO!" link="contact-us" newTab={true} />
+          <PartnershipLogos />
+        </div>
+        <div className="flex justify-center">
+          <Button text="Contact Us" link="contact-us" newTab={true} />
         </div>
       </div>
     </>
