@@ -112,7 +112,7 @@ const Footer = () => {
                 )}
                 {section === 'What We Do' && (
                   <>
-                    <div className="w-40 space-y-2 text-sm">
+                    <div className="w-36 space-y-2 text-sm">
                       <div className=" pb-2">
                         <a
                           href="what-we-do#services"
@@ -348,9 +348,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:grid lg:grid-cols-3 gap-2 s pb-1 pt-0 items-center pr-8">
-          {/* Left: Text Block */}
-          <div className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="flex flex-col lg:grid lg:grid-cols-3 gap-2 pb-1 pt-0 items-center pr-8">
+          {/* Left: Logo */}
+          <div className="flex justify-center lg:justify-start">
+            <a href="/">
+              <img
+                src="DCWhite.png"
+                alt="Logo"
+                className="h-auto max-h-24 object-contain"
+              />
+            </a>
+          </div>
+
+          {/* Middle: Text Block */}
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
             <p className="font-[sansation] text-sm font-bold text-gray-100"></p>
             <p className="font-[sansation] text-xs text-gray-100 pb-4">
               <span className="font-bold pr-2"></span>
@@ -361,26 +372,15 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Middle: Logo */}
-          <div className="order-1 lg:order-2 flex justify-center">
-            <a href="/">
-              <img
-                src="DCWhite.png"
-                alt="Logo"
-                className="h-auto max-h-24 object-contain"
-              />
-            </a>
-          </div>
-
           {/* Right: Map */}
-          <div className="order-3 lg:order-3 flex justify-center lg:justify-end pb-4">
+          <div className="flex justify-center lg:justify-end pb-4 lg:mt-[-200px]">
             <div className="w-full max-w-xs">
               <GoogleMapEmbed size="small" />
             </div>
           </div>
 
           {/* Footer Text for small screens only */}
-          <div className="order-4 lg:hidden text-xs text-gray-100 text-center pt-2">
+          <div className="w-full lg:hidden text-xs text-gray-100 text-center pt-2">
             © 2025 by DreamCatchers WorldWide
           </div>
         </div>
