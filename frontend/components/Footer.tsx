@@ -25,28 +25,28 @@ const Footer = () => {
                 {section === 'Home' ? (
                   <a
                     href="/"
-                    className="font-bold pb-4 hover:text-xl transition-all duration-200"
+                    className="font-bold pb-4 hover:text-base transition-all duration-200"
                   >
                     {section}
                   </a>
                 ) : section === 'What We Do' ? (
                   <a
                     href="/what-we-do"
-                    className="font-bold pb-4 hover:text-xl transition-all duration-200"
+                    className="font-bold pb-4 hover:text-base transition-all duration-200"
                   >
                     {section}
                   </a>
                 ) : section === 'Join Us' ? (
                   <a
                     href="/join-us"
-                    className="font-bold pb-4 hover:text-xl transition-all duration-200"
+                    className="font-bold pb-4 hover:text-base transition-all duration-200"
                   >
                     {section}
                   </a>
                 ) : section === 'Donate' ? (
                   <a
                     href="/donate"
-                    className="font-bold pb-4 hover:text-xl transition-all duration-200"
+                    className="font-bold pb-4 hover:text-base transition-all duration-200"
                   >
                     {section}
                   </a>
@@ -65,186 +65,204 @@ const Footer = () => {
               >
                 {section === 'Home' && (
                   <>
-                    <li>
-                      <a
-                        href="/about-us"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        About Us
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/our-team"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Our Team
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/mission-statement"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Mission Statement
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/privacy-policy"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Privacy Policy
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/contact-us"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Contact Us
-                      </a>
-                    </li>
+                    <div className="w-40 space-y-2 text-sm">
+                      <li>
+                        <a
+                          href="/about-us"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          About Us
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="/our-team"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Our Team
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/mission-statement"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Mission Statement
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/privacy-policy"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Privacy Policy
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/contact-us"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Contact Us
+                        </a>
+                      </li>
+                    </div>
                   </>
                 )}
                 {section === 'What We Do' && (
                   <>
-                    <div className=" pb-2">
-                      <a
-                        href="what-we-do#projects"
-                        className="font-bold hover:text-xl transition-all duration-200 "
-                      >
-                        Projects
-                      </a>
+                    <div className="w-40 space-y-2 text-sm">
+                      <div className=" pb-2">
+                        <a
+                          href="what-we-do#services"
+                          className="font-bold hover:text-base transition-all duration-200 "
+                        >
+                          Services
+                        </a>
+                      </div>
+                      <li>
+                        <a
+                          href="what-we-do#services"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Stretch and Flex (Yoga)
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="what-we-do#services"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Smart Tech for Seniors
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="what-we-do#services"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Homework Hubs
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="what-we-do#services"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Dance Classes
+                        </a>
+                      </li>
+                      <div className="pt-4 pb-2">
+                        <a
+                          href="what-we-do#events"
+                          className="font-bold hover:text-base transition-all duration-200 "
+                        >
+                          Events
+                        </a>
+                      </div>
+                      <li>
+                        <a
+                          href="what-we-do#events"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Feed4All
+                        </a>
+                      </li>
+
+                      <div className="pt-4 pb-2">
+                        <a
+                          href="what-we-do#events"
+                          className="font-bold hover:text-base transition-all duration-200 "
+                        >
+                          Affiliations
+                        </a>
+                      </div>
+                      <li>
+                        <a
+                          href="what-we-do#events"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Foreign Exchange NZ
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="what-we-do#events"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          House Dance NZ
+                        </a>
+                      </li>
                     </div>
-                    <li>
-                      <a
-                        href="what-we-do#projects"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Stretch and Flex (Yoga)
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="what-we-do#projects"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Smart Tech for Seniors
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="what-we-do#projects"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Homework Clubs
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="what-we-do#projects"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Dance Classes
-                      </a>
-                    </li>
-                    <div className="pt-4 pb-2">
-                      <a
-                        href="what-we-do#events"
-                        className="font-bold hover:text-xl transition-all duration-200 "
-                      >
-                        Events
-                      </a>
-                    </div>
-                    <li>
-                      <a
-                        href="what-we-do#events"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Feed4All
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="what-we-do#events"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Foreign Exchange NZ
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="what-we-do#events"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        House Dance NZ
-                      </a>
-                    </li>
                   </>
                 )}
                 {section === 'Join Us' && (
                   <>
-                    <li>
-                      <a
-                        href="/join-us"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Volunteer
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/newsletter"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Newsletter
-                      </a>
-                    </li>
+                    <div className="w-40 space-y-2 text-sm">
+                      <li>
+                        <a
+                          href="/join-us"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Volunteer
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/newsletter"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Newsletter
+                        </a>
+                      </li>
+                    </div>
                   </>
                 )}
                 {section === 'Donate' && (
                   <>
-                    <li>
-                      <a
-                        href="donate#givealittle"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Givealittle
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="donate#direct-donation"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Direct donations
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="donate#gifts"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Gifts
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="donate#partnerships"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Partnerships
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="donate#sponsorships"
-                        className="hover:text-xl transition-all duration-200"
-                      >
-                        Sponsorships (CSR)
-                      </a>
-                    </li>
+                    <div className="w-40 space-y-2 text-sm">
+                      <li>
+                        <a
+                          href="donate#givealittle"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Givealittle
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="donate#direct-donation"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Direct donations
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="donate#gifts"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Gifts
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="donate#partnerships"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Partnerships
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="donate#sponsorships"
+                          className="hover:text-base transition-all duration-200"
+                        >
+                          Sponsorships (CSR)
+                        </a>
+                      </li>
+                    </div>
                   </>
                 )}
               </ul>
@@ -253,13 +271,13 @@ const Footer = () => {
           <div>
             <p className="font-bold pb-4">What's On</p>
             <hr className="border-t-2 border-gray-300" />
-            <p className="font-bold pb-4 pt-4">Contact us</p>
-            <p>+64 21 083 74545</p>
-            <p>+44 7516 016 779</p>
-            <p className="pt-2">
+            <p className="font-bold pb-4 pt-4 text-sm">Contact us</p>
+            <p className="text-sm">+64 21 083 74545</p>
+            <p className="text-sm">+44 7516 016 779</p>
+            <p className="pt-2 text-sm">
               272 New Windor Road, New Windsor, Auckland, 0600
             </p>
-            <div className="flex space-x-1 pt-2  ">
+            <div className="flex space-x-2 pt-2  ">
               <a
                 href="https://x.com/i/flow/login?redirect_after_login=%2Fdreamcatchersnz"
                 target="_blank"
@@ -330,7 +348,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:grid lg:grid-cols-3 gap-2 s pb-1 pt-10 items-center pr-8">
+        <div className="flex flex-col lg:grid lg:grid-cols-3 gap-2 s pb-1 pt-0 items-center pr-8">
           {/* Left: Text Block */}
           <div className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
             <p className="font-[sansation] text-sm font-bold text-gray-100"></p>

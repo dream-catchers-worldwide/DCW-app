@@ -7,6 +7,7 @@ import NavbarJoinUsBox from './ui/NavbarJoinUsBox'
 import NavbarDonateBox from './ui/NavbarDonateBox'
 import HamburgerMenu from './ui/HamburgerMenu'
 import NavbarButton from './NavbarButtons'
+import { useLocale } from './LocaleContext'
 
 const navItems = [
   {
@@ -36,8 +37,14 @@ const navItems = [
 ]
 
 export default function Navbar() {
+  const { isUK } = useLocale()
   const [openBox, setOpenBox] = useState('')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [hasMounted, setHasMounted] = useState(false)
+
+  useEffect(() => {
+    setHasMounted(true)
+  }, [])
 
   const handleClick = (key) => {
     setOpenBox((prev) => (prev === key ? '' : key))
@@ -71,7 +78,7 @@ export default function Navbar() {
                 isOpen={openBox === key}
                 handleClick={() => handleClick(key)}
                 label={label}
-                subLabel={subLabel}
+                subLabel={hasMounted && !isUK ? subLabel : ''}
               />
             </div>
           ))}

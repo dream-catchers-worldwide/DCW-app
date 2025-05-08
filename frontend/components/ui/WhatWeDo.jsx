@@ -14,13 +14,13 @@ export default function AboutUs() {
         <div className="lg:pr-20 pl-4 font-[sansation] pt-5">
           <p className="text-md lg:text-xl text-red-700">What We Do</p>
           <p className="text-md text-black lg:text-3xl font-bold pt-3 pb-4">
-            Our Projects
+            Our Services
           </p>
           <p className="text-md text-black lg:text-lg pr-10">
             At DreamCatchers WorldWide, we’re committed to creating inclusive,
             accessible, and high-quality services that uplift vulnerable
             communities. Our projects span education, the arts, and community
-            support — all designed to break down barriers and ensure everyone,
+            support, all designed to break down barriers and ensure everyone,
             regardless of age or background, has the opportunity to learn, grow,
             and thrive.
           </p>

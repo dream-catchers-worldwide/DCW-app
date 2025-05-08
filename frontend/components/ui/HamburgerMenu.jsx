@@ -120,11 +120,20 @@ export default function HamburgerMenu() {
               <li>
                 <a href="what-we-do#events">Feed4All</a>
               </li>
+
+              <div className="py-2">
+                <a
+                  href="what-we-do#events"
+                  className="text-[#986100] text-md font-[Convergence] "
+                >
+                  Affiliations
+                </a>
+              </div>
               <li>
-                <a href="what-we-do#events#">Foreign Exchange NZ</a>
+                <a href="what-we-do#affiliations#">Foreign Exchange NZ</a>
               </li>
               <li>
-                <a href="what-we-do#events">House Dance NZ</a>
+                <a href="what-we-do#affiliations">House Dance NZ</a>
               </li>
             </ul>
           </div>
