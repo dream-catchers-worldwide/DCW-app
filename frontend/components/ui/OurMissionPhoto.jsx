@@ -1,7 +1,21 @@
+'use client'
+import { useLocale } from '../LocaleContext'
+
 export default function OurMissionPhoto() {
+  const { isUK } = useLocale()
   return (
     <div>
-      <img src="/images/Mission image .png" className="rounded-4xl w-120" />
+      {isUK ? (
+        <img
+          src="/images/uk mission .png"
+          className="lg:mt-20 rounded-4xl w-120"
+        />
+      ) : (
+        <img
+          src="/images/Mission image .png"
+          className=" lg:mt-20 rounded-4xl w-120"
+        />
+      )}
     </div>
   )
 }
