@@ -21,7 +21,7 @@ export default function AboutUs() {
 
             'At DreamCatchers WorldWide, we believe that everyone has the power to make a difference. Whether you are a volunteer, donor, or supporter, you can help us achieve our mission of providing services to vulnerable community groups.',
 
-            'oin us today and help make a positive impact on the lives of those in need.',
+            'Join us today and help make a positive impact on the lives of those in need.',
           ]}
           image="/AboutUsUK.avif"
         />

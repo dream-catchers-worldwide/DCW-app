@@ -7,7 +7,7 @@ export default function OurMissionPhoto() {
     <div>
       {isUK ? (
         <img
-          src="/images/uk mission .png"
+          src="/images/mission uk.png"
           className="lg:mt-20 rounded-4xl w-120"
         />
       ) : (

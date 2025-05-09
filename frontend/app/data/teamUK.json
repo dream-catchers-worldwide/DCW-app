@@ -21,9 +21,18 @@
   },
   {
     "id": 5,
-    "name": "Val Maseykin - CFO (NZ)",
+    "name": "Val Maseykin - CFO",
     "image": "/team/Val.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Anuja Thoppil Jayan - Marketing Intern",
+    "image": "/team/Anuja.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Nynke Brouwer - Strategy and Compliance Intern",
+    "image": "/team/Nynke.png"
   }
-
 
 ]

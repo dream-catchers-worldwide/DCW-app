@@ -9,10 +9,9 @@ export default function ContactUsText() {
           Thank you for reaching out to us. <br />
           If you need to get in touch with us, please use the following contact
           information: <br />
-          DreamCatchers WorldWide 54 Fossil Road, Lewisham London SE13 7DE
-          England <br />
-          Email:
-          <br /> support@dreamcatchersww.com <br /> Whatsapp: +64 21 083 74545
+          DreamCatchers WorldWide <br />
+          54 Fossil Road, Lewisham London SE13 7DE England <br />
+          support@dreamcatchersww.com <br /> Whatsapp: +44 7516 016779
         </p>
       </div>
     </>
