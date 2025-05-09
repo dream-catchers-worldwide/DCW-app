@@ -1,10 +1,12 @@
 'use client'
+
 import Content from '../Contents'
 import Button from './Button'
 import { useLocale } from '../LocaleContext'
 
 export default function Givealittle() {
   const { isUK } = useLocale()
+
   return (
     <>
       {isUK ? (
@@ -14,8 +16,8 @@ export default function Givealittle() {
             content={[
               'To make an instant and secure online donation using your Visa, MasterCard or AMEX, click on the button to be redirected to the Givealittle fundraising page:',
             ]}
-            image="/givealittle.jpeg"
-            imagePosition="right"
+            image="/gofundme.png"
+            // imagePosition="right"
             bgColor="gray"
           />
           <div className="text-black bg-gray-100 md:mx-10 lg:mx-25 xl:mx-50 pt-5">
