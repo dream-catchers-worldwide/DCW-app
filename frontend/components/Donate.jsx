@@ -14,7 +14,7 @@ export default function Donate() {
       </FadeInSection>
 
       <FadeInSection delay={0.3}>
-        <div id="givealittle">
+        <div id="givealittlegofundme">
           <Givealittle />
         </div>
       </FadeInSection>

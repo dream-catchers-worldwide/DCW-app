@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar'
 import TopLogos from '@/components/TopLogos'
 import Toggle from '@/components/Toggle'
 import PageWrapper from '@/components/PageWrapper'
+import { LocaleProvider } from '@/components/LocaleContext'
 
 const lora = Lora({
   variable: '--font-lora',
@@ -28,7 +29,8 @@ const dosis = Dosis({
 
 export const metadata = {
   title: 'Dream Catcher',
-  description: 'YDream Catcher World Wide',
+
+  description: 'Dream Catcher World Wide',
 }
 
 export default function RootLayout({
@@ -47,21 +49,23 @@ export default function RootLayout({
       <body
         className={`${lora.variable} ${convergence.variable} ${dosis.variable} font-sansation antialiased`}
         style={{
-          backgroundImage: 'url(/bg-pattern.png)',
+          backgroundImage: 'url(/bg-pattern-symmetrical.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           backgroundAttachment: 'fixed',
         }}
       >
-        <TopLogos />
-        <div className="pt-5">
-          <Toggle />
-          <Navbar />
-        </div>
-        {/* <main>{children}</main> */}
-        <PageWrapper>{children}</PageWrapper>
-        <Footer />
+        <LocaleProvider>
+          <TopLogos />
+          <div className="lg:pt-5 pt-2  ">
+            <Toggle />
+            <Navbar />
+          </div>
+          {/* <main>{children}</main> */}
+          <PageWrapper>{children}</PageWrapper>
+          <Footer />
+        </LocaleProvider>
       </body>
     </html>
   )

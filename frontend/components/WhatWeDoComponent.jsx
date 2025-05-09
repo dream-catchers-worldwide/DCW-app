@@ -1,7 +1,8 @@
 import React from 'react'
 import Contents from './Contents'
-import Projects from './ui/Projects'
+import Services from './ui/Services'
 import Events from './ui/Events'
+import Affiliations from './ui/Affiliations'
 import FadeInSection from './FadeInSection'
 
 export default function WhatWeDoComponent() {
@@ -20,13 +21,18 @@ export default function WhatWeDoComponent() {
         />
       </FadeInSection>
       <FadeInSection delay={0.5}>
-        <div id="projects">
-          <Projects />
+        <div id="services">
+          <Services />
         </div>{' '}
       </FadeInSection>
       <FadeInSection delay={0.5}>
         <div id="events">
           <Events />
+        </div>
+      </FadeInSection>
+      <FadeInSection delay={0.5}>
+        <div id="affiliations">
+          <Affiliations />
         </div>
       </FadeInSection>
     </>

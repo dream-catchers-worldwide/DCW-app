@@ -1,5 +1,10 @@
-import Donate from '@/components/Donate'
+'use client'
+import dynamic from 'next/dynamic'
+//for mismatch error
+const Donate = dynamic(() => import('@/components/Donate'), {
+  ssr: false,
+})
 
-export default async function donate() {
+export default function DonatePage() {
   return <Donate />
 }

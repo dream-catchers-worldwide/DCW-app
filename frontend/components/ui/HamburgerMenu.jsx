@@ -1,7 +1,9 @@
 'use client'
 import React, { useState } from 'react'
+import { useLocale } from '../LocaleContext'
 
 export default function HamburgerMenu() {
+  const { isUK } = useLocale()
   // State to track which menu item is selected
   const [activeMenu, setActiveMenu] = useState(null)
 
@@ -49,12 +51,14 @@ export default function HamburgerMenu() {
         {/* Added margin-top to give space */}
         {activeMenu === 'home' && (
           <div className="bg-[#CADEE2] w-50 p-4 mt-0">
-            <a
-              href="/"
-              className="text-[#986100] text-md font-[Convergence] mb-2  font-bold"
-            >
-              Home
-            </a>
+            <div className="pb-2">
+              <a
+                href="/"
+                className="text-[#986100] text-md font-[Convergence] mb-2  font-bold"
+              >
+                Home
+              </a>
+            </div>
             <ul className="text-black text-sm font-[Convergence] space-y-2">
               <li>
                 <a href="about-us">About Us</a>
@@ -82,7 +86,7 @@ export default function HamburgerMenu() {
             >
               What We Do
             </a>
-            <div className="py-2">
+            <div className="pb-2">
               <a
                 href="what-we-do#projects"
                 className="text-[#986100] text-md font-[Convergence] mb-2 "
@@ -93,13 +97,24 @@ export default function HamburgerMenu() {
 
             <ul className="text-black text-sm font-[Convergence] space-y-2">
               <li>
-                <a href="what-we-do#projects">Stretch and Flex (Yoga)</a>
+                <a
+                  target="_blank"
+                  href="https://www.eventbrite.co.nz/e/saturday-stretch-and-flex-yoga-class-tickets-1349556512859?aff=oddtdtcreator"
+                >
+                  Stretch and Flex (Yoga)
+                </a>
               </li>
               <li>
                 <a href="what-we-do#projects">Smart Tech for Seniors</a>
               </li>
               <li>
-                <a href="what-we-do#projects">Homework Clubs</a>
+                target="_blank"
+                <a
+                  target="_blank"
+                  href="https://www.eventbrite.co.uk/e/1315650569269?aff=oddtdtcreator"
+                >
+                  Homework Clubs
+                </a>
               </li>
               <li>
                 <a href="what-we-do#projects">Dance Classes</a>
@@ -116,20 +131,34 @@ export default function HamburgerMenu() {
 
             <ul className="text-black text-sm font-[Convergence] space-y-2">
               <li>
-                <a href="what-we-do#events">Feed4All</a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/feed4allnz?igsh=MXJpeGQ2M3pkNHA4bw=="
+                >
+                  Feed4All
+                </a>
+              </li>
+
+              <div className="py-2">
+                <a
+                  href="what-we-do#events"
+                  className="text-[#986100] text-md font-[Convergence] "
+                >
+                  Affiliations
+                </a>
+              </div>
+              <li>
+                <a href="what-we-do#affiliations#">Foreign Exchange NZ</a>
               </li>
               <li>
-                <a href="what-we-do#events#">Foreign Exchange NZ</a>
-              </li>
-              <li>
-                <a href="what-we-do#events">House Dance NZ</a>
+                <a href="what-we-do#affiliations">House Dance NZ</a>
               </li>
             </ul>
           </div>
         )}
         {activeMenu === 'joinUs' && (
           <div className="bg-[#CADEE2] w-50 p-4 mt-0">
-            <div className="py-2">
+            <div className="pb-2">
               <a
                 href="join-us"
                 className="text-[#986100] text-md font-[Convergence] mb-2 font-bold"
@@ -149,31 +178,63 @@ export default function HamburgerMenu() {
         )}
         {activeMenu === 'donate' && (
           <div className="bg-[#CADEE2] w-50 p-4 mt-0">
-            <div className="py-2">
-              <a
-                href="donate"
-                className="text-[#986100] text-md font-[Convergence] mb-2 font-bold"
-              >
-                Donate
-              </a>
-            </div>
-            <ul className="text-black text-sm font-[Convergence] space-y-2">
-              <li>
-                <a href="donate#givealittle">Give a little</a>
-              </li>
-              <li>
-                <a href="donate#direct-donation">Direct donations</a>
-              </li>
-              <li>
-                <a href="donate#gifts">Gifts</a>
-              </li>
-              <li>
-                <a href="donate#partnerships">Partnerships</a>
-              </li>
-              <li>
-                <a href="donate#sponsorships">Sponsorships (CSR)</a>
-              </li>
-            </ul>
+            {isUK ? (
+              <div>
+                <div className="pb-2">
+                  <a
+                    href="donate"
+                    className="text-[#986100] text-md font-[Convergence] mb-2 font-bold"
+                  >
+                    Donate
+                  </a>
+                </div>
+                <ul className="text-black text-sm font-[Convergence] space-y-2">
+                  <li>
+                    <a href="donate#givealittle">GoFundMe</a>
+                  </li>
+                  <li>
+                    <a href="donate#direct-donation">Direct donations</a>
+                  </li>
+                  <li>
+                    <a href="donate#gifts">Gifts</a>
+                  </li>
+                  <li>
+                    <a href="donate#partnerships">Partnerships</a>
+                  </li>
+                  <li>
+                    <a href="donate#sponsorships">Sponsorships (CSR)</a>
+                  </li>
+                </ul>
+              </div>
+            ) : (
+              <div>
+                <div className="pb-2">
+                  <a
+                    href="donate"
+                    className="text-[#986100] text-md font-[Convergence] mb-2 font-bold"
+                  >
+                    Donate
+                  </a>
+                </div>
+                <ul className="text-black text-sm font-[Convergence] space-y-2">
+                  <li>
+                    <a href="donate#givealittlegofundme">Givealittle</a>
+                  </li>
+                  <li>
+                    <a href="donate#direct-donation">Direct donations</a>
+                  </li>
+                  <li>
+                    <a href="donate#gifts">Gifts</a>
+                  </li>
+                  <li>
+                    <a href="donate#partnerships">Partnerships</a>
+                  </li>
+                  <li>
+                    <a href="donate#sponsorships">Sponsorships (CSR)</a>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         )}
       </div>

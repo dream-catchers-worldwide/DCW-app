@@ -13,6 +13,7 @@ export default function NavbarHomeBox() {
         <div className="border-l-2 sm:border-l-3 border-white h-80 my-4 sm:my-0 sm:mr-8"></div>
 
         {/* Middle Column - Larger Size */}
+
         <div className="flex-1 p-2 sm:p-4 font-[Convergence]">
           <div className="hover:scale-105 hover:translate-x-1 transition-transform duration-200">
             <a

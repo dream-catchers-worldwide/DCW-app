@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Jazmine Cox - Director",
+    "image": "/team/Jazmine.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Josephine Chapman - Secretary",
+    "image": "/team/Josephine.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Brian Edward Cox - Chairman",
+    "image": "/team/Brian.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Arjola Lujkaj - Adminstrator",
+    "image": "/team/Arjola.png"
+  },
+  {
+    "id": 5,
+    "name": "Val Maseykin - CFO",
+    "image": "/team/Val.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Anuja Thoppil Jayan - Marketing Intern",
+    "image": "/team/Anuja.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Nynke Brouwer - Strategy and Compliance Intern",
+    "image": "/team/Nynke.png"
+  }
+
+]

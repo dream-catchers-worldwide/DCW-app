@@ -6,7 +6,7 @@
   },
   {
     "id": 2,
-    "name": "Meema Manaia - Maori Cultural Officer (NZ",
+    "name": "Meema Manaia - Maori Cultural Officer (NZ)",
     "image": "/team/Meema.jpg"
   },
   {
@@ -43,6 +43,25 @@
     "id": 9,
     "name": "Fatima Qureshi - Web Developer (NZ)",
     "image": "/team/FatimaQ.png"
+  },
+  {
+    "id": 10,
+    "name": "Graham Fruisen - Homework Hub Academic Lead ",
+    "image": "/team/Graham.png"
+  },
+  {
+    "id": 11,
+    "name": "Yongwei Hu - Marketing Ads Campaign Manager ",
+    "image": "/team/Yongwei.png"
+  },
+  {
+    "id": 12,
+    "name": "Anuja Thoppil Jayan - Marketing Intern ",
+    "image": "/team/Anuja.jpeg"
   }
-
 ]
+
+
+
+
+ 
