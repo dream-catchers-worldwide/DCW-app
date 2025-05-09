@@ -371,73 +371,148 @@ const Footer = () => {
                 </div>
               )}
             </div>
-            <div className="flex space-x-2 pt-4  ">
-              <a
-                href="https://x.com/i/flow/login?redirect_after_login=%2Fdreamcatchersnz"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="socialMedia/c-x.svg"
-                  alt="xLogo"
-                  className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
-                />
-              </a>
-              <a
-                href="https://www.instagram.com/dreamcatchersworldwide/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="socialMedia/c-instagram.svg"
-                  alt="instagramLogo"
-                  className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
-                />
-              </a>
-              <a
-                href="https://www.facebook.com/dreamcatchersworldwide"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="socialMedia/c-facebook.svg"
-                  alt="facebookLogo"
-                  className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
-                />
-              </a>
-              <a
-                href="https://www.tiktok.com/@dreamcatchersworldwide"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="socialMedia/c-tiktok.svg"
-                  alt="tiktokLogo"
-                  className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/dreamcatchers-worldwide"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="socialMedia/c-linkedin.svg"
-                  alt="linkedinLogo"
-                  className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
-                />
-              </a>
-              <a
-                href="https://wa.me/447516016779"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="socialMedia/c-whatsapp.svg"
-                  alt="whatsappLogo"
-                  className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
-                />
-              </a>
+
+            {/* socilaMeda logos */}
+            <div>
+              {isUK ? (
+                <div className="flex space-x-2 pt-4  ">
+                  <a
+                    href="https://x.com/i/flow/login?redirect_after_login=%2Fdreamcatchersnz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="socialMedia/c-x.svg"
+                      alt="xLogo"
+                      className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
+                    />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/dreamcatcherswwuk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="socialMedia/c-instagram.svg"
+                      alt="instagramLogo"
+                      className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
+                    />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/dreamcatchersworldwide"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="socialMedia/c-facebook.svg"
+                      alt="facebookLogo"
+                      className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
+                    />
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@dreamcatchersworldwide"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="socialMedia/c-tiktok.svg"
+                      alt="tiktokLogo"
+                      className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
+                    />
+                  </a>
+                  <a
+                    href="www.linkedin.com/company/dreamcatchers-worldwide-uk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="socialMedia/c-linkedin.svg"
+                      alt="linkedinLogo"
+                      className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
+                    />
+                  </a>
+                  <a
+                    href="https://wa.me/447516016779"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="socialMedia/c-whatsapp.svg"
+                      alt="whatsappLogo"
+                      className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
+                    />
+                  </a>
+                </div>
+              ) : (
+                <div className="flex space-x-2 pt-4  ">
+                  <a
+                    href="https://x.com/i/flow/login?redirect_after_login=%2Fdreamcatchersnz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="socialMedia/c-x.svg"
+                      alt="xLogo"
+                      className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
+                    />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/dreamcatchersworldwide/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="socialMedia/c-instagram.svg"
+                      alt="instagramLogo"
+                      className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
+                    />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/dreamcatchersworldwide"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="socialMedia/c-facebook.svg"
+                      alt="facebookLogo"
+                      className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
+                    />
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@dreamcatchersworldwide"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="socialMedia/c-tiktok.svg"
+                      alt="tiktokLogo"
+                      className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
+                    />
+                  </a>
+                  <a
+                    href="www.linkedin.com/company/dreamcatchers-worldwide-uk "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="socialMedia/c-linkedin.svg"
+                      alt="linkedinLogo"
+                      className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
+                    />
+                  </a>
+                  <a
+                    href="https://wa.me/447516016779"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="socialMedia/c-whatsapp.svg"
+                      alt="whatsappLogo"
+                      className="w-8 h-auto rounded-full opacity-60 hover:opacity-100 transform transition-transform duration-300 hover:scale-120"
+                    />
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>
