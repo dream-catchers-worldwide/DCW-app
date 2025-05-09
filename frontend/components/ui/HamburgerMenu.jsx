@@ -1,7 +1,9 @@
 'use client'
 import React, { useState } from 'react'
+import { useLocale } from '../LocaleContext'
 
 export default function HamburgerMenu() {
+  const { isUK } = useLocale()
   // State to track which menu item is selected
   const [activeMenu, setActiveMenu] = useState(null)
 
@@ -176,31 +178,63 @@ export default function HamburgerMenu() {
         )}
         {activeMenu === 'donate' && (
           <div className="bg-[#CADEE2] w-50 p-4 mt-0">
-            <div className="pb-2">
-              <a
-                href="donate"
-                className="text-[#986100] text-md font-[Convergence] mb-2 font-bold"
-              >
-                Donate
-              </a>
-            </div>
-            <ul className="text-black text-sm font-[Convergence] space-y-2">
-              <li>
-                <a href="donate#givealittle">Givealittle</a>
-              </li>
-              <li>
-                <a href="donate#direct-donation">Direct donations</a>
-              </li>
-              <li>
-                <a href="donate#gifts">Gifts</a>
-              </li>
-              <li>
-                <a href="donate#partnerships">Partnerships</a>
-              </li>
-              <li>
-                <a href="donate#sponsorships">Sponsorships (CSR)</a>
-              </li>
-            </ul>
+            {isUK ? (
+              <div>
+                <div className="pb-2">
+                  <a
+                    href="donate"
+                    className="text-[#986100] text-md font-[Convergence] mb-2 font-bold"
+                  >
+                    Donate
+                  </a>
+                </div>
+                <ul className="text-black text-sm font-[Convergence] space-y-2">
+                  <li>
+                    <a href="donate#givealittle">GoFundMe</a>
+                  </li>
+                  <li>
+                    <a href="donate#direct-donation">Direct donations</a>
+                  </li>
+                  <li>
+                    <a href="donate#gifts">Gifts</a>
+                  </li>
+                  <li>
+                    <a href="donate#partnerships">Partnerships</a>
+                  </li>
+                  <li>
+                    <a href="donate#sponsorships">Sponsorships (CSR)</a>
+                  </li>
+                </ul>
+              </div>
+            ) : (
+              <div>
+                <div className="pb-2">
+                  <a
+                    href="donate"
+                    className="text-[#986100] text-md font-[Convergence] mb-2 font-bold"
+                  >
+                    Donate
+                  </a>
+                </div>
+                <ul className="text-black text-sm font-[Convergence] space-y-2">
+                  <li>
+                    <a href="donate#givealittlegofundme">Givealittle</a>
+                  </li>
+                  <li>
+                    <a href="donate#direct-donation">Direct donations</a>
+                  </li>
+                  <li>
+                    <a href="donate#gifts">Gifts</a>
+                  </li>
+                  <li>
+                    <a href="donate#partnerships">Partnerships</a>
+                  </li>
+                  <li>
+                    <a href="donate#sponsorships">Sponsorships (CSR)</a>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         )}
       </div>
