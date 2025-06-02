@@ -108,7 +108,6 @@ export default function HamburgerMenu() {
                 <a href="what-we-do#projects">Smart Tech for Seniors</a>
               </li>
               <li>
-                target="_blank"
                 <a
                   target="_blank"
                   href="https://www.eventbrite.co.uk/e/1315650569269?aff=oddtdtcreator"
