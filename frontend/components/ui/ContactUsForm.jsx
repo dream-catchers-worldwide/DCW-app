@@ -7,7 +7,7 @@ const ContactUs = () => {
         We’d Love to Hear From You!
       </h2>
       <form
-        action="https://formspree.io/f/mpwddvzl"
+        action="https://formspree.io/f/xwpowkby"
         method="POST"
         className="grid grid-cols-1 sm:grid-cols-2 gap-4"
       >
