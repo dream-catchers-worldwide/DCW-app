@@ -7,8 +7,6 @@ export default function sponsorships() {
       <Content
         header="Sponsorships (CSR)"
         content={[
-          'Copy for this section is:',
-
           'Partner with DreamCatchers WorldWide to make a meaningful impact. Your support helps us deliver education, wellbeing, and community programmes for vulnerable groups. Whether through funding, resources, or volunteering, together we can create real change—locally and globally. Talk with us today about our Sponsorship Portfolio Offerings.',
         ]}
         bgColor="gray"
